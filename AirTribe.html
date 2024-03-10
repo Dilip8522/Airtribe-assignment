@@ -100,6 +100,7 @@
             // Create a new card button
             var newCard = document.createElement('button');
             newCard.className = 'card_btn d-flex flex-start';
+            newCard.draggable = true;
             newCard.textContent = 'Card ' + (existingCardCount + 1);
             newCard.addEventListener('click', function() {
                 editCardName(this); // Allow editing the newly created card
